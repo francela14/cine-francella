@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Atracciones</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Administración de Atracciones</h1>
+
+  <div class="contenedor">
+
+    <input type="hidden" id="id">
+
+    <input type="text" id="nombre" placeholder="Nombre">
+    
+    <select id="categoria">
+      <option value="">Categoría</option>
+      <option value="Infantil">Infantil</option>
+      <option value="Familiar">Familiar</option>
+      <option value="Extrema">Extrema</option>
+      <option value="Acuática">Acuática</option>
+    </select>
+
+    <select id="estado">
+      <option value="">Estado</option>
+      <option value="Activa">Activa</option>
+      <option value="En mantenimiento">En mantenimiento</option>
+      <option value="Fuera de servicio">Fuera de servicio</option>
+    </select>
+
+    <input type="number" id="alturaMinima" placeholder="Altura mínima">
+    <input type="number" id="tiempoEspera" placeholder="Tiempo espera">
+
+    <button id="btnGuardar">Guardar</button>
+
+  </div>
+
+  <hr>
+
+  <div id="lista"></div>
+
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
